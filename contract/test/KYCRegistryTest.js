@@ -2,7 +2,6 @@ const KYCCertifier = artifacts.require("./KYCCertifier.sol");
 const KYCRegistry = artifacts.require("./KYCRegistry.sol");
 const KYCToken = artifacts.require("./KYCToken.sol")
 const KYCProject = artifacts.require("./kycProject.sol")
-const rp = require('request-promise')
 
 
 contract('KYCRegistryTest', function (accounts) {
@@ -61,11 +60,11 @@ contract('KYCRegistryTest', function (accounts) {
     const invoke = await kycCertifier.revokeCertifier({
       from: addresses[0]
     }).catch((err) => {
-      assert.equal(err, "Error: VM Exception while processing transaction: invalid opcode", 'revokeCertifier is not executed')
+      assert.equal(err, "Error: VM Exception while processing transaction: revert", 'revokeCertifier is not executed')
     })
 
     const vote = await kycCertifier.vote().catch((err) => {
-      assert.equal(err, "Error: VM Exception while processing transaction: invalid opcode", 'vote is not executed')
+      assert.equal(err, "Error: VM Exception while processing transaction: revert", 'vote is not executed')
     })
 
     const approveTokenToContract = await kycToken.approve(kycCertifier.address, 50000 * 10 ** decimals)
@@ -86,7 +85,7 @@ contract('KYCRegistryTest', function (accounts) {
     const errorVote = await kycCertifier.vote({
       from: addresses[1]
     }).catch((err) => {
-      assert.equal(err, "Error: VM Exception while processing transaction: invalid opcode", 'vote is not executed')
+      assert.equal(err, "Error: VM Exception while processing transaction: revert", 'vote is not executed')
     })
 
   });
@@ -94,10 +93,8 @@ contract('KYCRegistryTest', function (accounts) {
 
     const initKycRegistry = await kycRegistry.init(kycCertifier.address, kycProject.address);
 
-    const newAddress = await getNewAddress("https://etherproxy-183606.appspot.com/genkey?key=TESTKEY")
-    //console.log(newAddress.result.address)
 
-    project = newAddress.result.address;
+    project = "0xad502f028cc1bf2b1639f251ba6d73cfeb75ba24c98288008e8ed5ca0205ee37"
 
     const setProjectfee = await kycProject.setProject(project, web3.toWei('0.4', 'ether'))
 
@@ -105,9 +102,13 @@ contract('KYCRegistryTest', function (accounts) {
 
     assert.strictEqual(primaryCertifier, addresses[0], 'Primary is not set')
   })
-  it("should be claimed Certification for proposer and confirmed by primaryCertifier", async function () {
+  it("should be claimed Certification for proposer. and confirmed by primaryCertifier", async function () {
 
     const primaryCertifier = await kycRegistry.primaryCertifier();
+
+    const getProjectFee = await kycProject.getFeePrice(project)
+
+    //console.log(getProjectFee)
 
     const submitCertificate = await kycRegistry.submitCertificate({
       from: addresses[1],
@@ -117,6 +118,8 @@ contract('KYCRegistryTest', function (accounts) {
     const confirmCertificate = await kycRegistry.confirmCertificate(addresses[1], project, claimAddress, {
       from: primaryCertifier
     })
+
+    //console.log(confirmCertificate)
 
     const balanceOfProposer = await kycRegistry.getBalanceOfWei(addresses[1])
 
@@ -143,23 +146,3 @@ contract('KYCRegistryTest', function (accounts) {
   })
 
 })
-
-getNewAddress = async(uri) => {
-  return new Promise((resolve, reject) => {
-    var options = {
-      method: 'GET',
-      uri: uri,
-      json: true // Automatically stringifies the body to JSON
-    };
-
-    rp(options)
-      .then(function (parsedBody) {
-        resolve(parsedBody)
-        // POST succeeded...
-      })
-      .catch(function (err) {
-        reject(err)
-        // POST failed...
-      });
-  })
-}

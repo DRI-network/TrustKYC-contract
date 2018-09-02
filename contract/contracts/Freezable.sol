@@ -31,7 +31,7 @@ contract Freezable {
     * @dev Constructor is called when contract deployed.
     */
 
-    function Freezable() public {
+    constructor() public {
         owner = msg.sender;
         executable = true;
     }

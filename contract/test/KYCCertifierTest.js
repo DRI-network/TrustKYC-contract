@@ -63,11 +63,11 @@ contract('MultiCertifierTest', function (accounts) {
     const invoke = await kycCertifier.revokeCertifier({
       from: addresses[0]
     }).catch((err) => {
-      assert.equal(err, "Error: VM Exception while processing transaction: invalid opcode", 'revokeCertifier is not executed')
+      assert.equal(err, "Error: VM Exception while processing transaction: revert", 'revokeCertifier is not executed')
     })
     
     const vote = await kycCertifier.vote().catch((err) => {
-      assert.equal(err, "Error: VM Exception while processing transaction: invalid opcode", 'vote is not executed')
+      assert.equal(err, "Error: VM Exception while processing transaction: revert", 'vote is not executed')
     })
 
     const approveTokenToContract = await kycToken.approve(kycCertifier.address, 50000 * 10 ** decimals)
@@ -84,7 +84,7 @@ contract('MultiCertifierTest', function (accounts) {
     const errorVote = await kycCertifier.vote({
       from: addresses[1]
     }).catch((err) => {
-      assert.equal(err, "Error: VM Exception while processing transaction: invalid opcode", 'vote is not executed')
+      assert.equal(err, "Error: VM Exception while processing transaction: revert", 'vote is not executed')
     })
     
   });
@@ -93,7 +93,7 @@ contract('MultiCertifierTest', function (accounts) {
     const now = web3.eth.getBlock(web3.eth.blockNumber).timestamp + 40
 
     const claimCertifier = await kycCertifier.claimCertifier(addresses[0], now, false).catch((err) => {
-      assert.equal(err, "Error: VM Exception while processing transaction: invalid opcode", 'claimCertifier is not executed')
+      assert.equal(err, "Error: VM Exception while processing transaction: revert", 'claimCertifier is not executed')
     })
     const now2 = web3.eth.getBlock(web3.eth.blockNumber).timestamp + 40
 
@@ -104,11 +104,11 @@ contract('MultiCertifierTest', function (accounts) {
     const invoke = await kycCertifier.revokeCertifier({
       from: addresses[0]
     }).catch((err) => {
-      assert.equal(err, "Error: VM Exception while processing transaction: invalid opcode", 'revokeCertifier is not executed')
+      assert.equal(err, "Error: VM Exception while processing transaction: revert", 'revokeCertifier is not executed')
     })
 
     const vote = await kycCertifier.vote().catch((err) => {
-      assert.equal(err, "Error: VM Exception while processing transaction: invalid opcode", 'vote is not executed')
+      assert.equal(err, "Error: VM Exception while processing transaction: revert", 'vote is not executed')
     })
 
     const approveTokenToContract = await kycToken.approve(kycCertifier.address, 50000 * 10 ** decimals)
@@ -135,11 +135,11 @@ contract('MultiCertifierTest', function (accounts) {
     const invoke = await kycCertifier.revokeCertifier({
       from: addresses[0]
     }).catch((err) => {
-      assert.equal(err, "Error: VM Exception while processing transaction: invalid opcode", 'revokeCertifier is not executed')
+      assert.equal(err, "Error: VM Exception while processing transaction: revert", 'revokeCertifier is not executed')
     })
 
     const vote = await kycCertifier.vote().catch((err) => {
-      assert.equal(err, "Error: VM Exception while processing transaction: invalid opcode", 'vote is not executed')
+      assert.equal(err, "Error: VM Exception while processing transaction: revert", 'vote is not executed')
     })
 
     const approveTokenToContract = await kycToken.approve(kycCertifier.address, 50000 * 10 ** decimals)
@@ -175,11 +175,11 @@ contract('MultiCertifierTest', function (accounts) {
     const invoke = await kycCertifier.revokeCertifier({
       from: addresses[0]
     }).catch((err) => {
-      assert.equal(err, "Error: VM Exception while processing transaction: invalid opcode", 'revokeCertifier is not executed')
+      assert.equal(err, "Error: VM Exception while processing transaction: revert", 'revokeCertifier is not executed')
     })
 
     const vote = await kycCertifier.vote().catch((err) => {
-      assert.equal(err, "Error: VM Exception while processing transaction: invalid opcode", 'vote is not executed')
+      assert.equal(err, "Error: VM Exception while processing transaction: revert", 'vote is not executed')
     })
 
     const approveTokenToContract = await kycToken.approve(kycCertifier.address, 50000 * 10 ** decimals)

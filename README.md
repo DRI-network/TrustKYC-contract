@@ -1,5 +1,6 @@
-## Contract Test
+## TrustKYC-contract
 
+### Getting Start
 ```
 $ npm install -g truffle
 ```

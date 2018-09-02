@@ -1,0 +1,1795 @@
+{
+  "contractName": "KYCProject",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_flag",
+          "type": "bool"
+        }
+      ],
+      "name": "freeza",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "project",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "name": "price",
+          "type": "uint256"
+        }
+      ],
+      "name": "SetProject",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_project",
+          "type": "bytes32"
+        },
+        {
+          "name": "_price",
+          "type": "uint256"
+        }
+      ],
+      "name": "setProject",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_project",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getFeePrice",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506001600060146101000a81548160ff0219169083151502179055506103138061007b6000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634bb36a1d1461005c5780635e9ea731146100ab578063b6b8d4bd146100f2575b600080fd5b34801561006857600080fd5b50610095600480360381019080803560001916906020019092919080359060200190929190505050610137565b6040518082815260200191505060405180910390f35b3480156100b757600080fd5b506100d8600480360381019080803515159060200190929190505050610234565b604051808215151515815260200191505060405180910390f35b3480156100fe57600080fd5b5061012160048036038101908080356000191690602001909291905050506102c2565b6040518082815260200191505060405180910390f35b60008060149054906101000a900460ff16151561015357600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156101ae57600080fd5b600082101515156101be57600080fd5b81600160008560001916600019168152602001908152602001600020819055508183600019167f940068d867005519afae57dbeb5f9b1c2d29dc87a842d0ff1bbef8e89ec8fb7a60405160405180910390a360016000846000191660001916815260200190815260200160002054905092915050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561029157600080fd5b81600060146101000a81548160ff021916908315150217905550600060149054906101000a900460ff169050919050565b60006001600083600019166000191681526020019081526020016000205490509190505600a165627a7a723058206550282e72ac6118b97434e87b30630b15f876cee53a2c85a8b546b51c446a5d0029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680634bb36a1d1461005c5780635e9ea731146100ab578063b6b8d4bd146100f2575b600080fd5b34801561006857600080fd5b50610095600480360381019080803560001916906020019092919080359060200190929190505050610137565b6040518082815260200191505060405180910390f35b3480156100b757600080fd5b506100d8600480360381019080803515159060200190929190505050610234565b604051808215151515815260200191505060405180910390f35b3480156100fe57600080fd5b5061012160048036038101908080356000191690602001909291905050506102c2565b6040518082815260200191505060405180910390f35b60008060149054906101000a900460ff16151561015357600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156101ae57600080fd5b600082101515156101be57600080fd5b81600160008560001916600019168152602001908152602001600020819055508183600019167f940068d867005519afae57dbeb5f9b1c2d29dc87a842d0ff1bbef8e89ec8fb7a60405160405180910390a360016000846000191660001916815260200190815260200160002054905092915050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561029157600080fd5b81600060146101000a81548160ff021916908315150217905550600060149054906101000a900460ff169050919050565b60006001600083600019166000191681526020019081526020016000205490509190505600a165627a7a723058206550282e72ac6118b97434e87b30630b15f876cee53a2c85a8b546b51c446a5d0029",
+  "sourceMap": "241:826:6:-;;;626:23;8:9:-1;5:2;;;30:1;27;20:12;5:2;626:23:6;581:10:4;573:5;;:18;;;;;;;;;;;;;;;;;;614:4;601:10;;:17;;;;;;;;;;;;;;;;;;241:826:6;;;;;;",
+  "deployedSourceMap": "241:826:6:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;690:255;;8:9:-1;5:2;;;30:1;27;20:12;5:2;690:255:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;846:124:4;;8:9:-1;5:2;;;30:1;27;20:12;5:2;846:124:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;951:114:6;;8:9:-1;5:2;;;30:1;27;20:12;5:2;951:114:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;690:255;778:7;394:10:4;;;;;;;;;;;386:19;;;;;;;;332:5;;;;;;;;;;;318:19;;:10;:19;;;310:28;;;;;;;;815:1:6;805:6;:11;;797:20;;;;;;;;851:6;827:11;:21;839:8;827:21;;;;;;;;;;;;;;;;;:30;;;;893:6;883:8;872:28;;;;;;;;;;;;;917:11;:21;929:8;917:21;;;;;;;;;;;;;;;;;;910:28;;690:255;;;;:::o;846:124:4:-;902:4;332:5;;;;;;;;;;;318:19;;:10;:19;;;310:28;;;;;;;;931:5;918:10;;:18;;;;;;;;;;;;;;;;;;953:10;;;;;;;;;;;946:17;;846:124;;;:::o;951:114:6:-;1011:7;1037:11;:21;1049:8;1037:21;;;;;;;;;;;;;;;;;;1030:28;;951:114;;;:::o",
+  "source": "pragma solidity ^0.4.18;\nimport { SafeMath } from \"./SafeMath.sol\";\nimport { Freezable } from \"./Freezable.sol\";\n\n/// @title KYCProject - KYCProject contract\n/// @author - Yusaku Senga - <senga@dri.network>\n/// license let's see in LICENSE\n\ncontract KYCProject is Freezable {\n  \n    //using safemath\n    using SafeMath for uint256;\n\n    /**\n     * Storage\n     */\n\n    mapping(bytes32 => uint256) projectFees;\n\n    /** \n     * Event\n     */\n\n    event SetProject(bytes32 indexed project, uint256 indexed price);\n\n    /**\n     * @notice Constructor method\n     * @dev Constructor is called when contract deployed.\n     */\n\n    constructor() public {}\n\n    /**\n     * functions\n     */\n\n\n    function setProject(bytes32 _project, uint256 _price) public can() onlyOwner() returns (uint256) {\n        require(_price >= 0);\n        projectFees[_project] = _price;\n        emit SetProject(_project, _price);\n        return projectFees[_project];\n    }\n\n    function getFeePrice(bytes32 _project) public view returns (uint256) {\n        return projectFees[_project];\n    }\n}",
+  "sourcePath": "/Users/sengayusaku/repo/TrustKYC-contract/contract/contracts/KYCProject.sol",
+  "ast": {
+    "absolutePath": "/Users/sengayusaku/repo/TrustKYC-contract/contract/contracts/KYCProject.sol",
+    "exportedSymbols": {
+      "KYCProject": [
+        929
+      ]
+    },
+    "id": 930,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 858,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:6"
+      },
+      {
+        "absolutePath": "/Users/sengayusaku/repo/TrustKYC-contract/contract/contracts/SafeMath.sol",
+        "file": "./SafeMath.sol",
+        "id": 860,
+        "nodeType": "ImportDirective",
+        "scope": 930,
+        "sourceUnit": 1495,
+        "src": "25:42:6",
+        "symbolAliases": [
+          {
+            "foreign": 859,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/sengayusaku/repo/TrustKYC-contract/contract/contracts/Freezable.sol",
+        "file": "./Freezable.sol",
+        "id": 862,
+        "nodeType": "ImportDirective",
+        "scope": 930,
+        "sourceUnit": 364,
+        "src": "68:44:6",
+        "symbolAliases": [
+          {
+            "foreign": 861,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 863,
+              "name": "Freezable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 363,
+              "src": "264:9:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Freezable_$363",
+                "typeString": "contract Freezable"
+              }
+            },
+            "id": 864,
+            "nodeType": "InheritanceSpecifier",
+            "src": "264:9:6"
+          }
+        ],
+        "contractDependencies": [
+          363
+        ],
+        "contractKind": "contract",
+        "documentation": "@title KYCProject - KYCProject contract\n @author - Yusaku Senga - <senga@dri.network>\n license let's see in LICENSE",
+        "fullyImplemented": true,
+        "id": 929,
+        "linearizedBaseContracts": [
+          929,
+          363
+        ],
+        "name": "KYCProject",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 867,
+            "libraryName": {
+              "contractScope": null,
+              "id": 865,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1494,
+              "src": "310:8:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$1494",
+                "typeString": "library SafeMath"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "304:27:6",
+            "typeName": {
+              "id": 866,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "323:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 871,
+            "name": "projectFees",
+            "nodeType": "VariableDeclaration",
+            "scope": 929,
+            "src": "369:39:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_uint256_$",
+              "typeString": "mapping(bytes32 => uint256)"
+            },
+            "typeName": {
+              "id": 870,
+              "keyType": {
+                "id": 868,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "377:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "369:27:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_uint256_$",
+                "typeString": "mapping(bytes32 => uint256)"
+              },
+              "valueType": {
+                "id": 869,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "388:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "anonymous": false,
+            "documentation": "Event",
+            "id": 877,
+            "name": "SetProject",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 876,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 873,
+                  "indexed": true,
+                  "name": "project",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 877,
+                  "src": "463:23:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 872,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "463:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 875,
+                  "indexed": true,
+                  "name": "price",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 877,
+                  "src": "488:21:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 874,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "488:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "462:48:6"
+            },
+            "src": "446:65:6"
+          },
+          {
+            "body": {
+              "id": 880,
+              "nodeType": "Block",
+              "src": "647:2:6",
+              "statements": []
+            },
+            "documentation": "@notice Constructor method\n@dev Constructor is called when contract deployed.",
+            "id": 881,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 878,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "637:2:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 879,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "647:0:6"
+            },
+            "scope": 929,
+            "src": "626:23:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 915,
+              "nodeType": "Block",
+              "src": "787:158:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 897,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 895,
+                          "name": "_price",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 885,
+                          "src": "805:6:6",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 896,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "815:1:6",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "src": "805:11:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 894,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        1512,
+                        1513
+                      ],
+                      "referencedDeclaration": 1512,
+                      "src": "797:7:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 898,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "797:20:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 899,
+                  "nodeType": "ExpressionStatement",
+                  "src": "797:20:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 904,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 900,
+                        "name": "projectFees",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 871,
+                        "src": "827:11:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_bytes32_$_t_uint256_$",
+                          "typeString": "mapping(bytes32 => uint256)"
+                        }
+                      },
+                      "id": 902,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 901,
+                        "name": "_project",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 883,
+                        "src": "839:8:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "827:21:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 903,
+                      "name": "_price",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 885,
+                      "src": "851:6:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "827:30:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 905,
+                  "nodeType": "ExpressionStatement",
+                  "src": "827:30:6"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 907,
+                        "name": "_project",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 883,
+                        "src": "883:8:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 908,
+                        "name": "_price",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 885,
+                        "src": "893:6:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 906,
+                      "name": "SetProject",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 877,
+                      "src": "872:10:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$_t_uint256_$returns$__$",
+                        "typeString": "function (bytes32,uint256)"
+                      }
+                    },
+                    "id": 909,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "872:28:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 910,
+                  "nodeType": "EmitStatement",
+                  "src": "867:33:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 911,
+                      "name": "projectFees",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 871,
+                      "src": "917:11:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_uint256_$",
+                        "typeString": "mapping(bytes32 => uint256)"
+                      }
+                    },
+                    "id": 913,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 912,
+                      "name": "_project",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 883,
+                      "src": "929:8:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "917:21:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 893,
+                  "id": 914,
+                  "nodeType": "Return",
+                  "src": "910:28:6"
+                }
+              ]
+            },
+            "documentation": "functions",
+            "id": 916,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 888,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 887,
+                  "name": "can",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 333,
+                  "src": "751:3:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "751:5:6"
+              },
+              {
+                "arguments": [],
+                "id": 890,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 889,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 325,
+                  "src": "757:9:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "757:11:6"
+              }
+            ],
+            "name": "setProject",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 886,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 883,
+                  "name": "_project",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 916,
+                  "src": "710:16:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 882,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "710:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 885,
+                  "name": "_price",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 916,
+                  "src": "728:14:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 884,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "728:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "709:34:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 893,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 892,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 916,
+                  "src": "778:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 891,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "778:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "777:9:6"
+            },
+            "scope": 929,
+            "src": "690:255:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 927,
+              "nodeType": "Block",
+              "src": "1020:45:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 923,
+                      "name": "projectFees",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 871,
+                      "src": "1037:11:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_uint256_$",
+                        "typeString": "mapping(bytes32 => uint256)"
+                      }
+                    },
+                    "id": 925,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 924,
+                      "name": "_project",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 918,
+                      "src": "1049:8:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1037:21:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 922,
+                  "id": 926,
+                  "nodeType": "Return",
+                  "src": "1030:28:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 928,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getFeePrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 919,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 918,
+                  "name": "_project",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 928,
+                  "src": "972:16:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 917,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "972:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "971:18:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 922,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 921,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 928,
+                  "src": "1011:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 920,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1011:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1010:9:6"
+            },
+            "scope": 929,
+            "src": "951:114:6",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 930,
+        "src": "241:826:6"
+      }
+    ],
+    "src": "0:1067:6"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/sengayusaku/repo/TrustKYC-contract/contract/contracts/KYCProject.sol",
+    "exportedSymbols": {
+      "KYCProject": [
+        929
+      ]
+    },
+    "id": 930,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 858,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:6"
+      },
+      {
+        "absolutePath": "/Users/sengayusaku/repo/TrustKYC-contract/contract/contracts/SafeMath.sol",
+        "file": "./SafeMath.sol",
+        "id": 860,
+        "nodeType": "ImportDirective",
+        "scope": 930,
+        "sourceUnit": 1495,
+        "src": "25:42:6",
+        "symbolAliases": [
+          {
+            "foreign": 859,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/sengayusaku/repo/TrustKYC-contract/contract/contracts/Freezable.sol",
+        "file": "./Freezable.sol",
+        "id": 862,
+        "nodeType": "ImportDirective",
+        "scope": 930,
+        "sourceUnit": 364,
+        "src": "68:44:6",
+        "symbolAliases": [
+          {
+            "foreign": 861,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 863,
+              "name": "Freezable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 363,
+              "src": "264:9:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Freezable_$363",
+                "typeString": "contract Freezable"
+              }
+            },
+            "id": 864,
+            "nodeType": "InheritanceSpecifier",
+            "src": "264:9:6"
+          }
+        ],
+        "contractDependencies": [
+          363
+        ],
+        "contractKind": "contract",
+        "documentation": "@title KYCProject - KYCProject contract\n @author - Yusaku Senga - <senga@dri.network>\n license let's see in LICENSE",
+        "fullyImplemented": true,
+        "id": 929,
+        "linearizedBaseContracts": [
+          929,
+          363
+        ],
+        "name": "KYCProject",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 867,
+            "libraryName": {
+              "contractScope": null,
+              "id": 865,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1494,
+              "src": "310:8:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$1494",
+                "typeString": "library SafeMath"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "304:27:6",
+            "typeName": {
+              "id": 866,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "323:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 871,
+            "name": "projectFees",
+            "nodeType": "VariableDeclaration",
+            "scope": 929,
+            "src": "369:39:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_uint256_$",
+              "typeString": "mapping(bytes32 => uint256)"
+            },
+            "typeName": {
+              "id": 870,
+              "keyType": {
+                "id": 868,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "377:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "369:27:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_uint256_$",
+                "typeString": "mapping(bytes32 => uint256)"
+              },
+              "valueType": {
+                "id": 869,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "388:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "anonymous": false,
+            "documentation": "Event",
+            "id": 877,
+            "name": "SetProject",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 876,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 873,
+                  "indexed": true,
+                  "name": "project",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 877,
+                  "src": "463:23:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 872,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "463:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 875,
+                  "indexed": true,
+                  "name": "price",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 877,
+                  "src": "488:21:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 874,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "488:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "462:48:6"
+            },
+            "src": "446:65:6"
+          },
+          {
+            "body": {
+              "id": 880,
+              "nodeType": "Block",
+              "src": "647:2:6",
+              "statements": []
+            },
+            "documentation": "@notice Constructor method\n@dev Constructor is called when contract deployed.",
+            "id": 881,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 878,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "637:2:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 879,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "647:0:6"
+            },
+            "scope": 929,
+            "src": "626:23:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 915,
+              "nodeType": "Block",
+              "src": "787:158:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 897,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 895,
+                          "name": "_price",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 885,
+                          "src": "805:6:6",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 896,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "815:1:6",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "src": "805:11:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 894,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        1512,
+                        1513
+                      ],
+                      "referencedDeclaration": 1512,
+                      "src": "797:7:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 898,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "797:20:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 899,
+                  "nodeType": "ExpressionStatement",
+                  "src": "797:20:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 904,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 900,
+                        "name": "projectFees",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 871,
+                        "src": "827:11:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_bytes32_$_t_uint256_$",
+                          "typeString": "mapping(bytes32 => uint256)"
+                        }
+                      },
+                      "id": 902,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 901,
+                        "name": "_project",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 883,
+                        "src": "839:8:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "827:21:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 903,
+                      "name": "_price",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 885,
+                      "src": "851:6:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "827:30:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 905,
+                  "nodeType": "ExpressionStatement",
+                  "src": "827:30:6"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 907,
+                        "name": "_project",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 883,
+                        "src": "883:8:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 908,
+                        "name": "_price",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 885,
+                        "src": "893:6:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 906,
+                      "name": "SetProject",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 877,
+                      "src": "872:10:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$_t_uint256_$returns$__$",
+                        "typeString": "function (bytes32,uint256)"
+                      }
+                    },
+                    "id": 909,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "872:28:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 910,
+                  "nodeType": "EmitStatement",
+                  "src": "867:33:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 911,
+                      "name": "projectFees",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 871,
+                      "src": "917:11:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_uint256_$",
+                        "typeString": "mapping(bytes32 => uint256)"
+                      }
+                    },
+                    "id": 913,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 912,
+                      "name": "_project",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 883,
+                      "src": "929:8:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "917:21:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 893,
+                  "id": 914,
+                  "nodeType": "Return",
+                  "src": "910:28:6"
+                }
+              ]
+            },
+            "documentation": "functions",
+            "id": 916,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [],
+                "id": 888,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 887,
+                  "name": "can",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 333,
+                  "src": "751:3:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "751:5:6"
+              },
+              {
+                "arguments": [],
+                "id": 890,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 889,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 325,
+                  "src": "757:9:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "757:11:6"
+              }
+            ],
+            "name": "setProject",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 886,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 883,
+                  "name": "_project",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 916,
+                  "src": "710:16:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 882,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "710:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 885,
+                  "name": "_price",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 916,
+                  "src": "728:14:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 884,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "728:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "709:34:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 893,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 892,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 916,
+                  "src": "778:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 891,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "778:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "777:9:6"
+            },
+            "scope": 929,
+            "src": "690:255:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 927,
+              "nodeType": "Block",
+              "src": "1020:45:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 923,
+                      "name": "projectFees",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 871,
+                      "src": "1037:11:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_uint256_$",
+                        "typeString": "mapping(bytes32 => uint256)"
+                      }
+                    },
+                    "id": 925,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 924,
+                      "name": "_project",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 918,
+                      "src": "1049:8:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1037:21:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 922,
+                  "id": 926,
+                  "nodeType": "Return",
+                  "src": "1030:28:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 928,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getFeePrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 919,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 918,
+                  "name": "_project",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 928,
+                  "src": "972:16:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 917,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "972:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "971:18:6"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 922,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 921,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 928,
+                  "src": "1011:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 920,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1011:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1010:9:6"
+            },
+            "scope": 929,
+            "src": "951:114:6",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 930,
+        "src": "241:826:6"
+      }
+    ],
+    "src": "0:1067:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "1535871470363": {
+      "events": {},
+      "links": {},
+      "address": "0x90a5a086f47468f97024390bd71b641c005ff741",
+      "transactionHash": "0x3a324d15bd744a2d33ef31de02c528a1e7a2f45316a4ceb720ef8743d5e66211"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-09-02T06:58:16.378Z"
+}

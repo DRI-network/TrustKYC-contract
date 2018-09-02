@@ -91,7 +91,7 @@ contract KYCRegistry is MultiCertifier,Freezable {
     /// @param  _proposer    This applications proposer.
     /// @param  _project      This applications project.
     /// @param  _claimAddress  This applications claim Ethereum address.
-    function confirmCertificate(address _proposer, address _project, address _claimAddress) public can() onlyPrimaryCertifier() returns(bool) {
+    function confirmCertificate(address _proposer, bytes32 _project, address _claimAddress) public can() onlyPrimaryCertifier() returns(bool) {
         
         uint256 fee = project.getFeePrice(_project);
         
