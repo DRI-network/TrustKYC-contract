@@ -4,7 +4,7 @@ import { SafeMath } from "./SafeMath.sol";
 import { Freezable } from "./Freezable.sol";
 
 /*
- * Copyright (C) 2017 DRI
+ * Copyright (C) 2017-2018 DRI
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
