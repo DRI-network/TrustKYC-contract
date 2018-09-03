@@ -1,4 +1,4 @@
-## TrustKYC-contract
+# TrustKYC-contract
 
 ### Getting Start
 ```
