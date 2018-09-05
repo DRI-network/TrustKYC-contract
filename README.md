@@ -1,4 +1,6 @@
-# TrustKYC-contract
+# TrustKYC Contract
+
+This is an experimental implementation of KYC smart contract.
 
 ### Getting Start
 ```
